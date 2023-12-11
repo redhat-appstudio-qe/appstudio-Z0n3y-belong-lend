@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-ijto
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/happy-path-service-tenant/appstudio/dc-metro-map-ijto@sha256:c28d2f7e99692b928d38572d0ccd50dd36b3fe038f413b31d3cc485bb53003a0
+        name: my-nodejs
+        resources: {}
+status: {}
